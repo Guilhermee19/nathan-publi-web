@@ -1,0 +1,56 @@
+@import '../../../../styles/media';
+
+section{
+  width: 100%;
+  background-image: radial-gradient(at top left, #103E28 43%, #0C785B 81%);
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 0;
+
+    h1{
+      width: 100%;
+      color: var(--color-primary);
+      text-align: center;
+      margin: 0;
+
+      @include media('<=tablet') {
+        font-size: 5rem !important;
+      }
+    }
+
+    p{
+      width: 100%;
+      color: white;
+      text-align: center;
+      margin: 0;
+    }
+
+    .video{
+      width: 100%;
+      padding: 2rem 0 .5rem;
+
+      iframe{
+        width: 100%;
+        aspect-ratio: 16/9;
+        border-radius: var(--br) 0 var(--br) 0;
+        box-shadow: 2px 8px 20px 10px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .animation-btn{
+      animation: scale-loop 1s infinite alternate cubic-bezier(.79,.23,.72,.86);
+    }
+
+    @keyframes scale-loop {
+      from{
+        transform: scale(1.1);
+      }
+    }
+  }
+
+}
