@@ -1,0 +1,45 @@
+@import '../../../../styles/media';
+
+section{
+  width: 100%;
+  background: #373737;
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 0;
+
+    h1{
+      width: 100%;
+      color: var(--color-primary);
+      text-align: center;
+      margin: 0;
+      line-height: 1.2;
+
+      @include media('<=tablet') {
+        font-size: 3.5rem !important;
+      }
+    }
+
+    h3{
+      width: 100%;
+      color: white;
+      text-align: center;
+      font-weight: 400;
+    }
+
+    .animation-btn{
+      animation: scale-loop 1s infinite alternate cubic-bezier(.79,.23,.72,.86);
+    }
+
+    @keyframes scale-loop {
+      from{
+        transform: scale(1.1);
+      }
+    }
+  }
+
+}
