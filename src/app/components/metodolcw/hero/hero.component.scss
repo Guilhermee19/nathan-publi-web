@@ -17,6 +17,7 @@ section{
       color: var(--color-primary);
       text-align: center;
       margin: 0;
+      line-height: 1.2;
 
       @include media('<=tablet') {
         font-size: 5rem !important;
@@ -27,19 +28,14 @@ section{
       width: 100%;
       color: white;
       text-align: center;
-      margin: 0;
+      margin: 0 0 2rem;
     }
 
     .video{
       width: 100%;
-      padding: 2rem 0 .5rem;
-
-      iframe{
-        width: 100%;
-        aspect-ratio: 16/9;
-        border-radius: var(--br) 0 var(--br) 0;
-        box-shadow: 2px 8px 20px 10px rgba(0, 0, 0, 0.1);
-      }
+      aspect-ratio: 16/9;
+      border-radius: var(--br) 0 var(--br) 0;
+      box-shadow: 2px 8px 20px 10px rgba(0, 0, 0, 0.1);
     }
 
     .animation-btn{
