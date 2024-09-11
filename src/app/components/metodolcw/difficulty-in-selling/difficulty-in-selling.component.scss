@@ -1,0 +1,82 @@
+@import '../../../../styles/media';
+
+section{
+  width: 100%;
+  background-image: radial-gradient(at top left, #103E28 43%, #0C785B 81%);
+
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem 0;
+
+    img{
+      width: 50%;
+      max-width: 550px;
+      object-fit: contain;
+    }
+
+    .info{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+
+      h3{
+        color: white;
+        margin: 0;
+      }
+
+      h1{
+        color: var(--color-primary);
+        margin: 0;
+        line-height: 1;
+      }
+
+      p{
+        margin-top: 3rem;
+        color: white;
+        text-align: justify;
+
+        span.text-marking{
+          color: #00b92f !important;
+        }
+
+      }
+
+      .animation-btn{
+        animation: scale-loop 1s infinite alternate cubic-bezier(.79,.23,.72,.86);
+        margin: 3rem auto 0;
+      }
+
+      @keyframes scale-loop {
+        from{
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    @include media('<=tablet') {
+      flex-direction: column;
+
+      img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        min-width: 300px;
+        opacity: .2;
+        z-index: 5;
+      }
+
+      .info{
+        width: 100%;
+        z-index: 10;
+      }
+
+    }
+
+  }
+
+}
