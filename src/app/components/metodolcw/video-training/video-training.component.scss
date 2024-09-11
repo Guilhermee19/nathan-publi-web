@@ -1,0 +1,68 @@
+@import '../../../../styles/media';
+
+section{
+  width: 100%;
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 0;
+
+    p{
+      color: #7A7A7A;
+      font-weight: 600;
+      text-align: center;
+      line-height: 1.2;
+
+      &.font-poppins{
+        @include media('<=tablet') {
+          font-size: 2.5rem !important;
+        }
+      }
+
+      &.description{
+        font-weight: 100;
+      }
+
+      span.text-marking{
+        color: #00b92f !important;
+
+        @include media('<=tablet') {
+          font-size: 2.5rem !important;
+        }
+      }
+    }
+
+    figure{
+      width: 90%;
+      margin: 2rem 0;
+
+      img{
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .animation-btn{
+      animation: scale-loop 1s infinite alternate cubic-bezier(.79,.23,.72,.86);
+      margin: 3rem auto 2rem;
+      border: 2px solid  #005E16;
+    }
+
+    @keyframes scale-loop {
+      from{
+        transform: scale(1.1);
+      }
+    }
+
+    .arrow{
+      width: 10%;
+      max-width: 70px;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+    }
+  }
+}

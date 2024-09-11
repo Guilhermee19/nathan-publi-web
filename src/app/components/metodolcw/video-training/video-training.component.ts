@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { SharedModule } from '../../shared/shared.module';
 
 @Component({
   selector: 'app-video-training',
   standalone: true,
-  imports: [],
+  imports: [SharedModule],
   templateUrl: './video-training.component.html',
   styleUrl: './video-training.component.scss'
 })
