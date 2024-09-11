@@ -12,6 +12,7 @@ import { PricesComponent } from '../../components/metodolcw/prices/prices.compon
 import { GuaranteeComponent } from '../../components/metodolcw/guarantee/guarantee.component';
 import { DoubtsComponent } from '../../components/metodolcw/doubts/doubts.component';
 import { FaqComponent } from '../../components/metodolcw/faq/faq.component';
+import { WhatsappComponent } from '../../components/whatsapp/whatsapp.component';
 
 @Component({
   selector: 'app-metodolcw',
@@ -29,7 +30,8 @@ import { FaqComponent } from '../../components/metodolcw/faq/faq.component';
     PricesComponent,
     GuaranteeComponent,
     DoubtsComponent,
-    FaqComponent
+    FaqComponent,
+    WhatsappComponent
   ],
   templateUrl: './metodolcw.component.html',
   styleUrl: './metodolcw.component.scss'
