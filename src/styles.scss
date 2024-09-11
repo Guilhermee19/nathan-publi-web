@@ -1,4 +1,3 @@
-
 @use '@angular/material' as mat;
 @include mat.core();
 
@@ -20,6 +19,8 @@ $nathan-public-web-theme: mat.define-light-theme((
 @include mat.all-component-themes($nathan-public-web-theme);
 
 /* You can add global styles to this file, and also import other style files */
+@import "aos/dist/aos.css";
+
 @import "styles/button";
 @import "styles/media";
 @import "styles/page";
