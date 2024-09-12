@@ -8,8 +8,8 @@
   <div class="container">
     @for (item of access; track $index) {
       <div class="card">
-        <h2 class="f-33"> {{ item.title }}</h2>
-        <h5 class="f-16"> {{ item.description }}</h5>
+        <h2 class="f-26"> {{ item.title }}</h2>
+        <h5 class="f-14"> {{ item.description }}</h5>
       </div>
     }
   </div>
@@ -17,9 +17,9 @@
 
 <section class="page footer">
   <div class="container">
-    <a title="Suporte" class="animation-btn" mat-raised-button color="primary" rel="noopener" data-aos="zoom-in">
+    <button title="Suporte" class="animation-btn" mat-raised-button color="primary" rel="noopener" data-aos="zoom-in" (click)="moveScrollScreen('price')">
       EU QUERO LUCRAR PELO WHATSAPP
-    </a>
+    </button>
 
     <div class="banner">
       <img src="../../../assets/logo-lcw-branca-e-preta-300x112.png" alt="" data-aos="zoom-in">

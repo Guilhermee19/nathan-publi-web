@@ -1,1 +1,22 @@
-<p>training works!</p>
+<section class="page title">
+  <div class="container">
+    <h1 class="f-67"> Para quem é o treinamento? </h1>
+
+    <div class="grid">
+      @for (item of access; track $index) {
+        <div class="card">
+          <h2 class="f-26"> {{ item.title }}</h2>
+          <h5 class="f-14"> {{ item.description }}</h5>
+        </div>
+      }
+    </div>
+
+    <button title="Suporte" class="animation-btn" mat-raised-button color="primary" rel="noopener" data-aos="zoom-in" (click)="moveScrollScreen('price')">
+      EU QUERO LUCRAR PELO WHATSAPP
+    </button>
+
+    <div class="banner">
+      <img src="../../../assets/logo-lcw-branca-e-preta-300x112.png" alt="" data-aos="zoom-in">
+    </div>
+  </div>
+</section>
